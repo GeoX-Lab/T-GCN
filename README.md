@@ -34,6 +34,13 @@ The file structure is listed as follows:
 
 7 iGCL is the source codes for the paper named "Augmentation-Free Graph Contrastive Learning of Invariant-Discriminative Representations" published at IEEE Transactions on Neural Networks and Learning Systems.
 
+## 8. High-Order Topology-Enhanced Graph Convolutional Networks (HoT-GCN) for Dynamic Graphs
+
+## 9. Alleviating neighbor bias: augmenting graph self-supervise learning with structural equivalent positive samples
+
+## 10. LSTTN: A Long-Short Term Transformer-based Spatiotemporal Neural Network for Traffic Flow Forecasting
+
+
 8 Baseline includes methods such as (1) History Average model (HA) (2) Autoregressive Integrated Moving Average model (ARIMA) (3) Support Vector Regression model (SVR) (4) Graph Convolutional Network model (GCN) (5) Gated Recurrent Unit model (GRU)
 
 ## 1. T-GCN: A Temporal Graph Convolutional Network for Traffic Prediction
@@ -108,3 +115,10 @@ The manuscript can be visited at [arXiv](https://arxiv.org/abs/2403.16495) or [s
 
 [The code](https://github.com/GeoX-Lab/LSTTN)
 
+
+## 11. CAT: A Causally Graph Attention Network for Trimming Heterophilic Graph
+The local attention-guided message passing mechanism (LAMP) adopted in graph attention networks (GATs) can adaptively learn the importance of neighboring nodes and perform local aggregation better, thus demonstrating a stronger discrimination ability. However, existing GATs suffer from significant discrimination ability degradations in heterophilic graphs. The reason is that a high proportion of dissimilar neighbors can weaken the self-attention of the central node, resulting in the central node deviating from its similar nodes in the representation space. This type of influence caused by neighboring nodes is referred to as Distraction Effect (DE) in this paper. To estimate and weaken the DE induced by neighboring nodes, we propose a Causal graph Attention network for Trimming heterophilic graphs (CAT). To estimate the DE, since DE is generated through two paths, we adopt the total effect as the metric for estimating DE; To weaken the DE, we identify the neighbors with the highest DE (we call them Distraction Neighbors) and remove them. We adopt three representative GATs as the base model within the proposed CAT framework and conduct experiments on seven heterophilic datasets of three different sizes. Comparative experiments show that CAT can improve the node classification accuracies of all base GAT models. Ablation experiments and visualization further validate the enhanced discrimination ability of CATs. In addition, CAT is a plug-and-play framework and can be introduced to any LAMP-driven GAT because it learns a trimmed graph in the attention-learning stage, instead of modifying the model architecture or globally searching for new neighbors.
+
+The manuscript can be visited at [arXiv](https://arxiv.org/abs/2312.08672) or [sciencedirect](https://www.sciencedirect.com/science/article/pii/S0020025524008302).
+
+[The code](https://github.com/GeoX-Lab/CAT).
